@@ -45,6 +45,8 @@ The security lake becomes the single ingestion and normalization layer. Downstre
 Rather than each security tool maintaining its own connectors, AI Data Platform acts as the central hub. Raw logs from OCI services, applications, and infrastructure flow into Object Storage. Transformation pipelines parse, normalize, and enrich this data into Bronze, Silver, and Gold datasets. Security tools then consume clean, structured data instead of raw logs. When a new log source is added, it is integrated once and immediately becomes available to all downstream tools.
 
 ---
+<img width="1374" height="654" alt="image" src="https://github.com/user-attachments/assets/84a70403-9576-46bc-b150-0b1ed44fe8f5" />
+
 
 ## Data Lake vs. SIEM — Two Tools, One Strategy
 
