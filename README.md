@@ -113,6 +113,29 @@ AI Data Platform Workbench provides a **unified, governed development environmen
 
 Data engineers, threat hunters, and data scientists work in the same environment, using the same datasets, without copying data across tools or environments.
 
+## Code Repository
+
+All the code for this OCI Security Logs Data Lake project is available in this GitHub repository.
+The notebooks cover ingestion, transformation, and exploration of audit and flow logs.
+
+### Included Notebooks
+
+The root folder **AIDP-Code** contains the following Jupyter notebooks:
+
+| File                                      | Purpose                                                         |
+| ----------------------------------------- | --------------------------------------------------------------- |
+| `01_bronze_ingest_audit_logs_clean.ipynb` | Ingest OCI audit logs into bronze and perform initial cleaning. |
+| `02_bronze_ingest_flow_logs.ipynb`        | Ingest VCN flow logs into the bronze layer.                     |
+| `03_silver_transform_audit_logs.ipynb`    | Apply transformations on audit logs for the silver layer.       |
+| `04_silver_ingest_flow_logs.ipynb`        | Transform and clean flow logs for the silver layer.           |
+| `05_gold_transform_audit_logs.ipynb`      | Refine audit logs for the gold layer (enriched and curated).    |
+| `06_gold_ingest_flow_logs.ipynb`          | Refine flow logs for the gold layer.                            |
+| `07_silver_to_delta_conversion.ipynb`     | Convert silver parquet tables into Delta Lake format.           |
+| `11_Investigate_Queries.ipynb`            | Sample queries to explore and analyze log data.                 |
+| `Investigate_Queries.ipynb`               | Additional exploratory queries against the datasets.            |
+
+These notebooks implement the core data ingestion and transformation steps for building a Security Logs Data Lake on OCI.
+
 ### Designed to Enhance Existing Security Tools
 
 The output of the security lake is not meant to replace SIEMs, SOAR platforms, or other security tools. It strengthens them.
@@ -121,8 +144,6 @@ AI Data Platform produces cleaner, enriched, and higher-confidence datasets that
 
 This is how OCI AI Data Platform fits:
 it provides the **managed data, compute, and AI foundation** that allows a security lake to scale, learn, and deliver value over time—without increasing operational complexity.
-
----
 
 ## What’s Next
 
